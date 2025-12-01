@@ -50,42 +50,48 @@ print(accuracy_score(y_test,y_pred))
 
 
 def input_features():
-    RH2M= streamlit.number_input("Relative humidity at 2 meters(RH2M) (%) ",
-                                 df['RH2M'].min(),df['RH2M'].max(),df['RH2M'].mean())       
+    RH2M= streamlit.number_input("Relative humidity at 2 meters(RH2M) (%)")
+                            
                                                    
-    T2M_MAX= streamlit.number_input("Maximum temperature at 2 meters(T2M_MAX) (°C)"
-                                    ,df['T2M_MAX'].min(),df['T2M_MAX'].max(),df['T2M_MAX'].mean())  
+    T2M_MAX= streamlit.number_input("Maximum temperature at 2 meters(T2M_MAX) (°C)")
+                                      
                            
-    T2M_MIN= streamlit.number_input("Minimum temperature at 2 meters(T2M_MIN) (°C)",
-                                    df['T2M_MIN'].min(),df['T2M_MIN'].max(),df['T2M_MIN'].mean()) 
+    T2M_MIN= streamlit.number_input("Minimum temperature at 2 meters(T2M_MIN) (°C)")
+                                
                        
-    WS2M = streamlit.number_input("Wind speed at 2 meters(WS2M) (m/s)",
-                                  df['WS2M'].min(),df['WS2M'].max(),df['WS2M'].mean())  
+    WS2M = streamlit.number_input("Wind speed at 2 meters(WS2M) (m/s)")
+                                  
                      
-    T2M= streamlit.number_input("Mean temperature at 2 meters above surface(T2M) (°C)",
-                                df['T2M'].min(),df['T2M'].max(),df['T2M'].mean())     
+    T2M= streamlit.number_input("Mean temperature at 2 meters above surface(T2M) (°C)")
+                                     
                        
-    ALLSKY_SFC_SW_DWN=  streamlit.number_input("All Sky Surface Shortwave Downward Irradiance(ALLSKY_SFC_SW_DWN) (W/m² or kW-hr/m²/day)",
-                                               df['ALLSKY_SFC_SW_DWN'].min(),df['ALLSKY_SFC_SW_DWN'].max(),
-                                               df['ALLSKY_SFC_SW_DWN'].mean())     
+    ALLSKY_SFC_SW_DWN=  streamlit.number_input("All Sky Surface Shortwave Downward Irradiance(ALLSKY_SFC_SW_DWN) (W/m² or kW-hr/m²/day)")
+                                                 
                           
-    PRECTOTCORR= streamlit.number_input("Corrected Precipitation(PRECTOTCORR) (mm or mm/day)",
-                                        df['PRECTOTCORR'].min(),df['PRECTOTCORR'].max(),df['PRECTOTCORR'].mean())
+    PRECTOTCORR= streamlit.number_input("Corrected Precipitation(PRECTOTCORR) (mm or mm/day)")
+                                        
              
-    spei=streamlit.number_input("Standardized Precipitation Evapotranspiration Index(SPEI)",
-                                df['spei'].min(),df['spei'].max(),df['spei'].mean()) 
+    spei=streamlit.number_input("Standardized Precipitation Evapotranspiration Index(SPEI)")
+                                
     
-    lat_sin=streamlit.number_input("Latitude Sin(lat_sin)",df['lat_sin'].min(),df['lat_sin'].max(),df['lat_sin'].mean())
-
-    lat_cos=streamlit.number_input("Latitude cos(lat_cos)",df['lat_cos'].min(),df['lat_cos'].max(),df['lat_cos'].mean())
-
-    lon_sin=streamlit.number_input("Longitude sin(lon_sin)",df['lon_sin'].min(),df['lon_sin'].max(),df['lon_sin'].mean())
-
-    lon_cos=streamlit.number_input("Longitude cos(lon_cos)",df['lon_cos'].min(),df['lon_cos'].max(),df['lon_cos'].mean())
-
-    month_sin=streamlit.number_input("Month sin(month_sin)",df['month_sin'].min(),df['month_sin'].max(),df['month_sin'].mean())
+    lat_sin=streamlit.number_input("Latitude Sin(lat_sin)")
     
-    month_cos=streamlit.number_input("Month cos(month_cos)",df['month_cos'].min(),df['month_cos'].max(),df['month_cos'].mean())
+
+    lat_cos=streamlit.number_input("Latitude cos(lat_cos)")
+                                   
+
+    lon_sin=streamlit.number_input("Longitude sin(lon_sin)")
+                                   
+                        
+
+    lon_cos=streamlit.number_input("Longitude cos(lon_cos)")
+                                   
+
+    month_sin=streamlit.number_input("Month sin(month_sin)")
+                                     
+    
+    month_cos=streamlit.number_input("Month cos(month_cos)")
+                                    
     
         
 
@@ -119,6 +125,6 @@ input_scaled=scaler.transform(input_df)
 result=model.predict(input_scaled)
 
 if streamlit.button("Show result"):
-    final_result=" 🌿 NO Drought" if result[0]==0 else " ⚠️ Drought"    
+    final_result="  NO Drought" if result[0]==0 else " Drought"    
 
     streamlit.success(final_result)
