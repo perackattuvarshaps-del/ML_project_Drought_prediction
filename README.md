@@ -45,7 +45,8 @@ Input Features
 Climate and Atmospheric Features
 --------------------------------
 
-•	RH2M :   Relative Humidity measured at 2 meters above ground level(shows how much moisture is present in the air at 2 m above the ground)
+•	RH2M
+=========:   Relative Humidity measured at 2 meters above ground level(shows how much moisture is present in the air at 2 m               above the ground)
 
    lower values indicates increased evaporation.
         
@@ -55,7 +56,7 @@ Climate and Atmospheric Features
    
 •	WS2M(Wind speed at 2 meters) : Wind speed near the ground that affects how fast moisture evaporates.
 
-•	ALLSKY-SFC-SW-DWN(All-sky surface shortwave downward irradiance) : Amount of sunlight reaching the ground,which increases heating and evaporation.
+•	ALLSKY-SFC-SW-DWN(All-sky surface shortwave downward irradiance) : Amount of sunlight reaching the ground,which increases      heating and evaporation.
 
 
 Hydrological Features
@@ -63,7 +64,7 @@ Hydrological Features
 •	Prectotcorr(corrected precipitation) : Total rainfall after correction(less rainfall overtime leads to drought).
 
 
-•	SPEI(Standardized Precipitation Evapotranspiration index): A drought index based on rainfall and  temperature .
+• SPEI(Standardized Precipitation Evapotranspiration index): A drought index based on rainfall and  temperature .
 
    Negative values shows dry conditions.
    
@@ -79,6 +80,7 @@ Seasonal Features
 ----------------
 
 •	month_sin,month_cos : Encoded month values used to represent seasons like monsoons and dryperiod.
+
 
 Predictive Framework
 --------------------
