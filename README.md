@@ -43,24 +43,30 @@ Input Features
 -------------
 Climate and Atmospheric Features
 --------------------------------
-RH2M : Relative Humidity measured at 2 meters above ground level(shows how much moisture is present in the air at 2 m above the ground)
+RH2M :
+Relative Humidity measured at 2 meters above ground level(shows how much moisture is present in the air at 2 m above the ground)
 
    lower values indicates increased evaporation.
         
-T2M_MAX,T2M_MIN,T2M : Maximum,Minimum,Average air temperature at 2 meters above the surface.
+T2M_MAX,T2M_MIN,T2M :
+Maximum,Minimum,Average air temperature at 2 meters above the surface.
 
    High tempeature increase water loss from soil.
    
-WS2M(Wind speed at 2 meters) : Wind speed near the ground that affects how fast moisture evaporates.
+WS2M(Wind speed at 2 meters) :
+Wind speed near the ground that affects how fast moisture evaporates.
 
-ALLSKY-SFC-SW-DWN(All-sky surface shortwave downward irradiance) : Amount of sunlight reaching the ground,which increases heating and evaporation.
+ALLSKY-SFC-SW-DWN(All-sky surface shortwave downward irradiance) :
+Amount of sunlight reaching the ground,which increases heating and evaporation.
 
 
 Hydrological Features
 ---------------------
-Prectotcorr(corrected precipitation) : Total rainfall after correction(less rainfall overtime leads to drought).
+Prectotcorr(corrected precipitation) :
+Total rainfall after correction(less rainfall overtime leads to drought).
 
-SPEI(Standardized Precipitation Evapotranspiration index): A drought index based on rainfall and  temperature .
+SPEI(Standardized Precipitation Evapotranspiration index):
+A drought index based on rainfall and  temperature .
 
    Negative values shows dry conditions.
 
