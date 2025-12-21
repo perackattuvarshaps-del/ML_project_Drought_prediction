@@ -71,15 +71,15 @@ Hydrological Features
 Spatial Features
 ----------------
 
-•	lat_sin,lat_cos : Encoded latitude values that help the model understand location.
+•	lat_sin, lat_cos : Encoded latitude values that help the model understand location.
 
 
-•	lon_sin,lon_cos : Encoded longitude values that help identify regional patterns.
+•	lon_sin, lon_cos : Encoded longitude values that help identify regional patterns.
 
 Seasonal Features
 ----------------
 
-•	month_sin,month_cos : Encoded month values used to represent seasons like monsoons and dryperiod.
+•	month_sin, month_cos : Encoded month values used to represent seasons like monsoons and dryperiod.
 
 
 Predictive Framework
