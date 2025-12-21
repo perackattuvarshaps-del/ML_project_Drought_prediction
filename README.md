@@ -49,23 +49,28 @@ Relative Humidity measured at 2 meters above ground level(shows how much moistur
    lower values indicates increased evaporation.
         
 T2M_MAX,T2M_MIN,T2M :
+
 Maximum,Minimum,Average air temperature at 2 meters above the surface.
 
    High tempeature increase water loss from soil.
    
 WS2M(Wind speed at 2 meters) :
+
 Wind speed near the ground that affects how fast moisture evaporates.
 
 ALLSKY-SFC-SW-DWN(All-sky surface shortwave downward irradiance) :
+
 Amount of sunlight reaching the ground,which increases heating and evaporation.
 
 
 Hydrological Features
 ---------------------
 Prectotcorr(corrected precipitation) :
+
 Total rainfall after correction(less rainfall overtime leads to drought).
 
 SPEI(Standardized Precipitation Evapotranspiration index):
+
 A drought index based on rainfall and  temperature .
 
    Negative values shows dry conditions.
@@ -75,6 +80,7 @@ Spatial Features
 ----------------
 
 lat_sin,lat_cos : Encoded latitude values that help the model understand location.
+
 
 lon_sin,lon_cos : Encoded longitude values that help identify regional patterns.
 
@@ -127,7 +133,7 @@ Clear,numeric inputs for all entries.
    
    Install required packages
    
-   Run the Streamlit app:streamlit run app.py
+   Run the Streamlit app : streamlit run app.py
 
 
 
