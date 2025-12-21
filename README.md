@@ -19,7 +19,9 @@ Dataset
 Source : Kaggle -Drought prediction dataset
 
 Link : https://www.kaggle.com/datasets/vijayaragulvr/drought-prediction-dataset
+
 Time period-Jan 2015-Dec 2023(108 months)
+
 Target :
    0 --> No Drought
    1 --> Drought
