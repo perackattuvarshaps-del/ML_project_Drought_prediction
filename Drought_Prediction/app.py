@@ -1,7 +1,6 @@
 
 import streamlit as st
 import pandas as pd
-from matplotlib import pyplot
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.naive_bayes import GaussianNB
